@@ -4,26 +4,44 @@ from app.misc import *
 @app.route("/login", methods=["GET"])
 def login():
     data = request.json
-    username = data["username"]
-    password = data["password"]
     try:
-        user = db.getUserByUsername(username)
+        advertiser = db.getAdvertiserByUsername(data["username"])
+        if advertiser.password == data["password"]:
+            return jsonify({
+                "message": "logged in",
+                "user": {
+                    "id": advertiser.id,
+                    "type": "advertiser",
+                    "username": advertiser.username,
+                    "links": advertiser.links
+                }
+            })
+        else:
+            return jsonify({
+                "message": "wrong password"
+            }), 400
     except dataexceptions.RecordIsMissing:
-        return jsonify({
-            "message": "username not found",
-            "user": None
-        }), 401
-    if user.password != password:
-        return jsonify({
-            "message": "wrong password",
-            "user": None
-        }), 401
-    return jsonify({
-        "message": "logged in",
-        "user": {
-            "id": user.id,
-            "type": user.type,
-            "username": user.username,
-            "email": user.email
-        }
-    }), 201
+        try:
+            streamer = db.getStreamerByUsername(data["username"])
+            if streamer.password == data["password"]:
+                return jsonify({
+                    "message": "logged in",
+                    "user": {
+                        "username": streamer.username,
+                        "links": streamer.links,
+                        "about":streamer.about,
+                        "prices": {
+                            "banner": streamer.bannerPrice,
+                            "video": streamer.videoPrice,
+                            "native": streamer.nativePrice
+                        }
+                    }
+                })
+            else:
+                return jsonify({
+                    "message": "wrong password"
+                }), 400
+        except dataexceptions.RecordIsMissing:
+            return jsonify({
+                "message": "user is not registered"
+            }), 400

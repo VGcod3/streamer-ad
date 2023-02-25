@@ -1,5 +1,9 @@
 from . import (
     helloworld,
     login,
-    register
+    register,
+    advertisers,
+    feedbacks,
+    streamers,
+    streamposts
 )
