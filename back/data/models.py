@@ -18,18 +18,11 @@ class Advertiser:
     password: str
 
 @dataclass
-class PostStream:
-    id: int
-    sender: str
-    caption: str
-    tags: str
-
-@dataclass
 class PostAdds:
     id: int
     sender: str
     caption: str
-    text: str
+    category: str
 
 @dataclass
 class CompletedOffer:
