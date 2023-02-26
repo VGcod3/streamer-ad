@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const StreamersPage = () => {
     const { data, status } = useQuery('streamers', async () => {
-        const response = await fetch('streamers.json');
+        const response = await fetch('https://streamad-a8ca6-default-rtdb.europe-west1.firebasedatabase.app/streamers.json');
         if (!response.ok) {
             throw new Error('Failed to fetch streamers');
         }

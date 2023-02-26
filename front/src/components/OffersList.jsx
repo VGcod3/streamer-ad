@@ -14,7 +14,7 @@ function OfferCard({ offer }) {
 
 function OffersList() {
     const { isLoading, error, data } = useQuery('offers', () =>
-        fetch('offers.json').then((res) => res.json())
+        fetch('https://streamad-a8ca6-default-rtdb.europe-west1.firebasedatabase.app/offers.json').then((res) => res.json())
     );
 
     if (isLoading) return <div>Loading...</div>;

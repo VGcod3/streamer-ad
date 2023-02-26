@@ -13,7 +13,7 @@ const StreamerPage = () => {
     useEffect(() => {
         const fetchStreamerData = async () => {
             try {
-                const response = await fetch('streamers.json');
+                const response = await fetch('https://streamad-a8ca6-default-rtdb.europe-west1.firebasedatabase.app/streamers.json');
                 const data = await response.json();
                 const streamer = data.find(streamer => streamer.id == streamerID)
                 console.log(streamer);

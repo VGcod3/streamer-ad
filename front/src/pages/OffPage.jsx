@@ -12,7 +12,7 @@ const OfferPage = () => {
     const { isLoading, isError, data: offerData } = useQuery(
         ['offer', offerID],
         async () => {
-            const response = await fetch(`offers.json`);
+            const response = await fetch(`https://streamad-a8ca6-default-rtdb.europe-west1.firebasedatabase.app/offers.json`);
             const data = await response.json();
             const offer = data.find(offer => offer.id == offerID)
             console.log(offer);

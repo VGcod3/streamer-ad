@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const OffersPage = () => {
     async function getOffers() {
-        const response = await fetch('offers.json');
+        const response = await fetch('https://streamad-a8ca6-default-rtdb.europe-west1.firebasedatabase.app/offers.json');
         const data = await response.json();
         return data;
     }
