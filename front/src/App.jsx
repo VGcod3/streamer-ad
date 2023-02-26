@@ -7,7 +7,7 @@ import RegPage from './pages/RegPage'
 import StrPage from './pages/StreamerPage'
 import StreamersPage from './pages/Streamers'
 import OffersPage from './pages/OffersPage';
-import OffPage from './pages/Offpage'
+import OffPage from './pages/OffPage'
 
 import Footer from './components/Footer';
 import Header from './components/Header';
