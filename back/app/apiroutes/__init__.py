@@ -5,5 +5,6 @@ from . import (
     advertisers,
     feedbacks,
     streamers,
-    streamposts
+    streamposts,
+    addsposts
 )

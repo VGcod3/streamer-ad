@@ -2,8 +2,7 @@ from app.misc import *
 
 
 @app.route("/get_all_addsposts", methods=["GET"])
-def get_all():
-    data = request.json
+def get_all_addsposts():
     addsposts = db.getAllAddsposts()
     response = {"addsposts": []}
     for addspost in addsposts:
