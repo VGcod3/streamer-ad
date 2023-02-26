@@ -1,11 +1,9 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import { Link } from "react-router-dom";
-
 
 const StreamersPage = () => {
     const { data, status } = useQuery('streamers', async () => {
-        const response = await fetch('db.json/streamers');
+        const response = await fetch('http://localhost:3000/streamers');
         if (!response.ok) {
             throw new Error('Failed to fetch streamers');
         }
@@ -21,9 +19,10 @@ const StreamersPage = () => {
     }
 
     return (
-        <div className="p-4 bg-darkBg rounded">
-            <table className="min-w-full divide-y divide-gray-200 ">
-                <thead className="bg-gray-50 ">
+        <div className="p-4 bg-darkBg">
+            <h1 className="text-xl font-bold mb-4">Streamers</h1>
+            <table className="min-w-full divide-y divide-gray-200">
+                <thead className="bg-gray-50">
                     <tr>
                         <th
                             scope="col"
@@ -59,22 +58,14 @@ const StreamersPage = () => {
                 </thead>
                 <tbody className="bg-lightBg divide-y divide-gray-200">
                     { data.map((streamer) => (
-                        <tr key={ streamer.username } className='border-gray-200 hover:text-gray-600 hover:bg-gray-100'>
-                            <Link to={ `/streamer/${streamer.id}` }>
-                                <td className="px-6 py-12 font-bold hover:text-hblue whitespace-nowrap text-lg h-full text-center my-auto">{ streamer.username }</td>
-                            </Link>
+                        <tr key={ streamer.username }>
+                            <td className="px-6 py-4 whitespace-nowrap">{ streamer.username }</td>
                             <td className="px-6 py-4 whitespace-nowrap">{ streamer.email }</td>
                             <td className="px-6 py-4 whitespace-nowrap">{ streamer.twitch }</td>
                             <td className="px-6 py-4 whitespace-nowrap">
-                                <ul className="list-inside list-none">
+                                <ul className="list-disc list-inside">
                                     { Object.entries(streamer.prices).map(([service, price]) => (
-                                        <li key={ service }>
-                                            service :
-                                            {
-                                                <span className='text-hred'>{ price }</span>
-                                            }
-                                            {/* { `${service}: $${price}` } */ }
-                                        </li>
+                                        <li key={ service }>{ `${service}: $${price}` }</li>
                                     )) }
                                 </ul>
                             </td>
@@ -85,7 +76,6 @@ const StreamersPage = () => {
                                     )) }
                                 </ul>
                             </td>
-
                         </tr>
                     )) }
                 </tbody>

@@ -1,3 +1,29 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+.main-title {
+  max-width: 70%;
+}
+
+.blue-shadow {
+  text-shadow: 0px 0px 15px #023dc4;
+}
+.box-shadow {
+  box-shadow: 0px 0px 15px #023dc4;
+}
+
+.streamer {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+  top: 3vh;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hred {
+  text-shadow: 0px 0px 5px #c40249;
+}
+
+@media screen and (max-width: 720px) {
+  .streamer {
+    display: none;
+  }
+} ;

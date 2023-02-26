@@ -4,6 +4,7 @@ from app.misc import *
 @app.route("/get_all_streamers", methods=["GET"])
 def get_all_streamers():
     streamers = db.getAllStreamers()
+
     response = {
         "streamers": []
     }
@@ -11,7 +12,7 @@ def get_all_streamers():
         response["streamers"].append({
             "id": streamer.id,
             "username": streamer.username,
-            "password": streamer.password,
+            # "password": streamer.password,
             "links": streamer.links,
             "prices": {
                 "banner": streamer.bannerPrice,
@@ -19,6 +20,10 @@ def get_all_streamers():
                 "native": streamer.nativePrice
             }
         })
+    # Add the Access-Control-Allow-Origin header to allow cross-origin requests
+    headers = {
+        'Access-Control-Allow-Origin': '*'
+    }
     return jsonify(response), 200
 
 
@@ -43,4 +48,3 @@ def get_streamer_by_id():
             "native": streamer.nativePrice
         }
     }), 200
-
