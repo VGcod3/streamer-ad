@@ -14,7 +14,7 @@ function OfferCard({ offer }) {
 
 function OffersList() {
     const { isLoading, error, data } = useQuery('offers', () =>
-        fetch('db.json/offers').then((res) => res.json())
+        fetch('offers.json').then((res) => res.json())
     );
 
     if (isLoading) return <div>Loading...</div>;

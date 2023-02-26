@@ -12,7 +12,7 @@ const OfferPage = () => {
     const { isLoading, isError, data: offerData } = useQuery(
         ['offer', offerID],
         async () => {
-            const response = await fetch(`db.json/offers`);
+            const response = await fetch(`offers.json`);
             const data = await response.json();
             const offer = data.find(offer => offer.id == offerID)
             console.log(offer);

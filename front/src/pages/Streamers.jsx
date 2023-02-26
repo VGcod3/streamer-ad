@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const StreamersPage = () => {
     const { data, status } = useQuery('streamers', async () => {
-        const response = await fetch('db.json/streamers');
+        const response = await fetch('streamers.json');
         if (!response.ok) {
             throw new Error('Failed to fetch streamers');
         }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const OffersPage = () => {
     async function getOffers() {
-        const response = await fetch('db.json//offers');
+        const response = await fetch('offers.json');
         const data = await response.json();
         return data;
     }

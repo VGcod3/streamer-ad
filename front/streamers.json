@@ -1,0 +1,276 @@
+{
+    "streamers": [
+        {
+            "id": 1,
+            "username": "StreamKing",
+            "email": "streamking@gmail.com",
+            "twitch": "twitch.tv/streamking",
+            "prices": {
+                "post": 1000,
+                "banner": 400,
+                "video": 600,
+                "mention": 100
+            },
+            "available": [
+                [
+                    "2023-04-01",
+                    "2023-04-03"
+                ],
+                [
+                    "2023-04-05",
+                    "2023-04-07"
+                ],
+                [
+                    "2023-04-09",
+                    "2023-04-11"
+                ]
+            ]
+        },
+        {
+            "id": 2,
+            "username": "GamingGuru",
+            "email": "gamingguru@gmail.com",
+            "twitch": "twitch.tv/gamingguru",
+            "prices": {
+                "post": 1500,
+                "banner": 500,
+                "video": 800,
+                "mention": 200
+            },
+            "available": [
+                [
+                    "2023-03-20",
+                    "2023-03-22"
+                ],
+                [
+                    "2023-03-25",
+                    "2023-03-27"
+                ],
+                [
+                    "2023-03-30",
+                    "2023-04-01"
+                ]
+            ]
+        },
+        {
+            "id": 3,
+            "username": "ProPlayer",
+            "email": "proplayer@gmail.com",
+            "twitch": "twitch.tv/proplayer",
+            "prices": {
+                "post": 2000,
+                "banner": 800,
+                "video": 1200,
+                "mention": 300
+            },
+            "available": [
+                [
+                    "2023-03-15",
+                    "2023-03-18"
+                ],
+                [
+                    "2023-03-22",
+                    "2023-03-25"
+                ],
+                [
+                    "2023-03-29",
+                    "2023-04-01"
+                ]
+            ]
+        },
+        {
+            "id": 4,
+            "username": "eSportsFan",
+            "email": "esportsfan@gmail.com",
+            "twitch": "twitch.tv/esportsfan",
+            "prices": {
+                "post": 800,
+                "banner": 300,
+                "video": 500,
+                "mention": 80
+            },
+            "available": [
+                [
+                    "2023-04-02",
+                    "2023-04-04"
+                ],
+                [
+                    "2023-04-06",
+                    "2023-04-08"
+                ],
+                [
+                    "2023-04-10",
+                    "2023-04-12"
+                ]
+            ]
+        },
+        {
+            "id": 5,
+            "username": "GamerGal",
+            "email": "gamergal@gmail.com",
+            "twitch": "twitch.tv/gamergal",
+            "prices": {
+                "post": 1200,
+                "banner": 400,
+                "video": 700,
+                "mention": 150
+            },
+            "available": [
+                [
+                    "2023-03-25",
+                    "2023-03-27"
+                ],
+                [
+                    "2023-03-30",
+                    "2023-04-01"
+                ],
+                [
+                    "2023-04-03",
+                    "2023-04-05"
+                ]
+            ]
+        },
+        {
+            "id": 6,
+            "username": "CoolStreamz",
+            "email": "coolstreamz@gmail.com",
+            "twitch": "twitch.tv/coolstreamz",
+            "prices": {
+                "post": 1200,
+                "banner": 500,
+                "video": 800,
+                "mention": 150
+            },
+            "available": [
+                [
+                    "2023-04-02",
+                    "2023-04-04"
+                ],
+                [
+                    "2023-04-06",
+                    "2023-04-08"
+                ],
+                [
+                    "2023-04-10",
+                    "2023-04-12"
+                ]
+            ]
+        },
+        {
+            "id": 7,
+            "username": "StreamMaster",
+            "email": "streammaster@gmail.com",
+            "twitch": "twitch.tv/streammaster",
+            "prices": {
+                "post": 1500,
+                "banner": 600,
+                "video": 1000,
+                "mention": 200
+            },
+            "available": [
+                [
+                    "2023-03-20",
+                    "2023-03-22"
+                ],
+                [
+                    "2023-03-25",
+                    "2023-03-27"
+                ],
+                [
+                    "2023-03-30",
+                    "2023-04-01"
+                ]
+            ]
+        },
+        {
+            "id": 8,
+            "username": "GamingWizard",
+            "email": "gamingwizard@gmail.com",
+            "twitch": "twitch.tv/gamingwizard",
+            "prices": {
+                "post": 2000,
+                "banner": 800,
+                "video": 1500,
+                "mention": 300
+            },
+            "available": [
+                [
+                    "2023-03-15",
+                    "2023-03-18"
+                ],
+                [
+                    "2023-03-22",
+                    "2023-03-25"
+                ],
+                [
+                    "2023-03-29",
+                    "2023-04-01"
+                ]
+            ]
+        },
+        {
+            "id": 9,
+            "username": "StreamerExtraordinaire",
+            "email": "streamerextraordinaire@gmail.com",
+            "twitch": "twitch.tv/streamerextraordinaire",
+            "prices": {
+                "post": 2500,
+                "banner": 1000,
+                "video": 2000,
+                "mention": 500
+            },
+            "available": [
+                [
+                    "2023-03-18",
+                    "2023-03-21"
+                ],
+                [
+                    "2023-03-26",
+                    "2023-03-29"
+                ],
+                [
+                    "2023-04-02",
+                    "2023-04-05"
+                ]
+            ]
+        },
+        {
+            "id": 10,
+            "username": "GamerGuy",
+            "email": "gamerguy@gmail.com",
+            "twitch": "twitch.tv/gamerguy",
+            "prices": {
+                "post": 800,
+                "banner": 300,
+                "video": 600,
+                "mention": 100
+            },
+            "available": [
+                [
+                    "2023-04-03",
+                    "2023-04-05"
+                ],
+                [
+                    "2023-04-08",
+                    "2023-04-10"
+                ],
+                [
+                    "2023-04-13",
+                    "2023-04-15"
+                ]
+            ]
+        },
+        {
+            "id": 11,
+            "username": "StreamerDude",
+            "email": "streamerdude@gmail.com",
+            "twitch": "twitch.tv/streamerdude",
+            "prices": {
+                "post": 1000,
+                "banner": 400,
+                "video": 700,
+                "mention": 120
+            }
+        }
+    ]
+}

@@ -4,7 +4,7 @@ import StreamerItem from './StreamerItem';
 import { Link } from "react-router-dom"
 
 const fetchStreamers = async () => {
-    const response = await fetch('db.json/streamers');
+    const response = await fetch('streamers.json');
     const data = await response.json();
     return data;
 };

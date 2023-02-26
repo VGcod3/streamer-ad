@@ -13,7 +13,7 @@ const StreamerPage = () => {
     useEffect(() => {
         const fetchStreamerData = async () => {
             try {
-                const response = await fetch('db.json/streamers');
+                const response = await fetch('streamers.json');
                 const data = await response.json();
                 const streamer = data.find(streamer => streamer.id == streamerID)
                 console.log(streamer);

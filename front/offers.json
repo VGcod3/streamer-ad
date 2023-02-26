@@ -1,0 +1,84 @@
+{
+    "offers": [
+        {
+            "id": 321,
+            "sender": 432,
+            "caption": "Upgrade your gaming setup with our high-performance gear",
+            "category": "gaming",
+            "price": 200,
+            "description": "Our high-performance gaming gear will take your gaming experience to the next level. Whether you're a casual or hardcore gamer, we have everything you need to upgrade your setup."
+        },
+        {
+            "id": 322,
+            "sender": 433,
+            "caption": "Get ready to level up with our top-rated gaming accessories",
+            "category": "gaming",
+            "price": 100,
+            "description": "Our top-rated gaming accessories are designed to help you level up your game. From gaming mice to headsets, we have everything you need to take your gaming experience to the next level."
+        },
+        {
+            "id": 323,
+            "sender": 434,
+            "caption": "Experience the ultimate gaming experience with our top-rated games",
+            "category": "gaming",
+            "price": 60,
+            "description": "Experience the ultimate gaming experience with our top-rated games. From action-packed shooters to immersive RPGs, we have a wide selection of games to choose from."
+        },
+        {
+            "id": 324,
+            "sender": 435,
+            "caption": "Looking for a new gaming console? Check out our latest selection",
+            "category": "gaming",
+            "price": 500,
+            "description": "Looking for a new gaming console? Look no further than our latest selection. We have everything from the latest Xbox and PlayStation consoles to the classic Nintendo Switch."
+        },
+        {
+            "id": 325,
+            "sender": 436,
+            "caption": "Join the action with our newest gaming releases",
+            "category": "gaming",
+            "price": 70,
+            "description": "Join the action with our newest gaming releases. From the latest Call of Duty to the newest Assassin's Creed, we have all the hottest games."
+        },
+        {
+            "id": 326,
+            "sender": 437,
+            "caption": "Upgrade your work setup with our powerful desktop computers",
+            "category": "computers",
+            "price": 400,
+            "description": "Upgrade your work setup with our powerful desktop computers. Our computers are optimized for performance, so you can get your work done faster and more efficiently."
+        },
+        {
+            "id": 327,
+            "sender": 438,
+            "caption": "Get the job done faster with our laptops optimized for productivity",
+            "category": "computers",
+            "price": 800,
+            "description": "Get the job done faster with our laptops optimized for productivity. Our laptops are designed to be powerful and efficient, so you can get your work done on-the-go."
+        },
+        {
+            "id": 328,
+            "sender": 439,
+            "caption": "Need more storage? Check out our wide selection of external hard drives",
+            "category": "computers",
+            "price": 100,
+            "description": "Need more storage? Check out our wide selection of external hard drives. From portable drives to desktop drives, we have everything you need to store your important files and documents."
+        },
+        {
+            "id": 329,
+            "sender": 440,
+            "caption": "Protect your computer with our top-rated antivirus software",
+            "category": "computers",
+            "price": 75,
+            "description": "Keep your computer safe from viruses, malware, and other online threats with our powerful antivirus software. Our software is easy to use and constantly updated to protect against the latest threats."
+        },
+        {
+            "id": 330,
+            "sender": 441,
+            "caption": "Enhance your gaming experience with our gaming laptops",
+            "category": "computers",
+            "price": 500,
+            "description": "Take your gaming experience to the next level with our high-performance gaming laptops. Our laptops are specially designed for gaming and come equipped with top-of-the-line graphics cards and processors to deliver smooth, lag-free gameplay."
+        }
+    ]
+}
